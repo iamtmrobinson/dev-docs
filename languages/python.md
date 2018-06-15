@@ -34,6 +34,17 @@ user_tom_robinson = { 'user': 'U9J1ZSB34' }
 get_commits_intent.action(team_id, user_tom_robinson)
 ```
 
+For auto reload: (https://stackoverflow.com/questions/1907993/autoreload-of-modules-in-ipython)
+
+I did this in the REPL:
+```
+%load_ext autoreload
+%autoreload 2
+```
+
+Then did the `ipython profile create` stuff from the answer below for doing it automatically in the future
+
+
 ## Unit Testing
 To run all tests (from inside the `svc` directory):
 ```
