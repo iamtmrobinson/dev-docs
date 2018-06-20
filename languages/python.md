@@ -1,4 +1,4 @@
-# Useful Python Things
+# Python
 
 ## General
 Use ipython for pretty-printed REPL usage:

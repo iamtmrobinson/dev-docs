@@ -1,4 +1,4 @@
-# Useful Git Things
+# Git
 
 ## Branching
 
