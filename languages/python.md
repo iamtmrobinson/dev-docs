@@ -12,7 +12,7 @@ To get the available attributes and methods from a class use `dir`:
 dir(result[60]['belongs_to'])
 ```
 
-To run graph queries from our application, bootstrap with `Env()` and then go:
+To run graph queries from our application, bootstrap with `Env()` and then do:
 ```
 from tm_svc import env
 my_env = env.Env()
@@ -42,7 +42,7 @@ I did this in the REPL:
 %autoreload 2
 ```
 
-Then did the `ipython profile create` stuff from the answer below for doing it automatically in the future
+Then did the `ipython profile create` stuff from the answer below for doing it automatically in the future.
 
 
 ## Unit Testing
@@ -59,12 +59,12 @@ python -m pytest ./tests -s
 
 ## Logging
 
-FOrmatted strings
+Formatted strings:
 ```
 f'There were {len(commits)} commits.'
 ```
 
-Logging out from a class
+Logging information from a class:
 ```
 import logging
 
@@ -73,3 +73,11 @@ log=logging.getLogger(__name__)
 
 # To log:
 log.info(',smdkadsnc')
+```
+
+## Pipenv
+
+Virtual environments created by Pipenv are stored in `~/.virtualenvs` and are named by the project name and a hash of its location e.g. `model-Kovkq8ZR`
+
+Check if a project has an env already by running the following command in the project directory:
+`pipenv --venv`
