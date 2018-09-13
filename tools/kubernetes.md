@@ -14,3 +14,8 @@ Find more info about individual pod:
 ```
 kubectl describe pod [POD_ID]
 ```
+
+Log into a shell on a pod:
+```
+kubectl exec -it [POD_ID] -- sh
+```
