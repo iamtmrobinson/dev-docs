@@ -2,12 +2,17 @@
 
 ## Branching
 
+Operates on references under `refs/remotes/...` It doesn't affect local branches
+```
+git fetch --prune
+```
+
 Clear local (merged) branches:
 ```
 git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d
 ```
 
-Remove local references to remote branches that have been deleted:
+Force remove local branches:
 ```
-git fetch -p origin
+git branch -D branch_name
 ```
